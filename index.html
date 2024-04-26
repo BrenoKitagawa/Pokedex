@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/pokedex.css">
+
+</head>
+<body>
+                              <!-- POKEDEX -->
+    <div id="container-pokedex">
+        <div id="pokedex">
+
+            
+                <input type="checkbox" name="ativo" id="ativo">
+                    <label id="ligar" for="ativo">On</label>
+    
+            <img src="imgs/pokedex.png">
+          
+            <div id="desligado"></div>
+            <div class="imgs" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.3"><img id="img" ></div>
+   <div class="infos">
+            <span class="info"> id:</span>
+            <span class="name"></span>
+            <span class="pesquisar">
+                <input type="text" id="search" placeholder="Pokemon">
+            </span>
+           
+        </div>
+                      <!-- BOTÃO FUNCIONAL -->
+        <button type="button" id="ButtonPesquisar" disabled>PESQUISAR</button>
+
+        <button type="button" class="btn" id="up"></button>
+        <button type="button" class="btn" id="down"></button>
+
+        <button type="button" class="btn" id="next"></button>
+        <button type="button" class="btn" id="back"> </button>
+        <button type="button" id="reset">RESET</button>
+
+
+        
+        <input type="radio" name="slid" id="shiny">
+        <input type="radio" name="slid" id="normal">
+
+        <label for="shiny" class="shiny" id="shinyLabel">Shiny</label>
+        <label for="normal" class="shiny" id="normal">Normal</label>
+
+
+                        <!-- BOTÃO DE APARENCIA -->
+        <span class="camara"> <span class="reflexo"></span>
+        <span class="reflexo" id="segundoReflexo"></span></span>
+
+        <span class="inits" id="um" style="--color:red;--i:1"></span>
+        <span class="inits" id="dois" style="--color:yellow;--i:2"></span>
+        <span class="inits" id="tres" style="--color:greenyellow;--i:3"></span>
+        <span class="last" id="quatro" ></span>
+       
+    </div>
+
+ 
+    </div> 
+
+
+
+    
+    <script src="js/pokedex.js">
+
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".imgs"), {
+            max: 25,
+            speed: 300
+        });
+        
+
+</script>
+   
+
+
+</body>
+</body>
+</html>
